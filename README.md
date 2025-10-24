@@ -15,15 +15,18 @@ You will be using lists in racket to play a dice game based on the game _Pig_. T
 ---
 ### Question 0
 - Fill in the body for the function `rollList`.
-- `(rollList n)` should use `build-list` and `random` to generate a list of `n` random integers in the range `[1, 12]`.
+  - `(rollList n)` should use `build-list` and `random` to generate a list of `n` random integers in the range `[1, 12]`.
+- Create a variable `rolls`, which should be the result of using `rollList` to generate 6 rolls.
 
 
 ---
 ### Question 1
 - Fill in the body for the function `filterRolls`.
-- `(filterRolls evens g)` should use `filter` to return a list containing:
-  - The even values in `g` if `evens` is `#true`.
-  - The odd values in `g` if `evens` is `#false`.
+- `(filterRolls evenOrOdd g)` should use `filter` to return a list containing:
+  - The even values in `g` if `evenOrOdd` is `#true`.
+  - The odd values in `g` if `evenOrOdd` is `#false`.
+- Create a variable `evens`, which should use `filterRolls` and contain the even values found in `rolls`.
+- Create a variable `odds`, which should use `filterRolls` and contain the odd valuess found in `rolls`.
 
 ---
 ### Question 2
@@ -40,9 +43,9 @@ You will be using lists in racket to play a dice game based on the game _Pig_. T
 ---
 ### Question 4
 - Fill in the body for the function `getScore`.
-- `(getScore evens g)` should return the correct score for the rolls in list `g`.
-  - If `evens` is `#t`, find the correct score based on an even number of rolls.
-  - If `evens` is `#f`, find the correct score based on an odd number of rolls.
+- `(getScore evenOrOdd g)` should return the correct score for the rolls in list `g`.
+  - If `evenOrOdd` is `#t`, find the correct score based on an even number of rolls.
+  - If `evenOrOdd` is `#f`, find the correct score based on an odd number of rolls.
 - This function should call `losingRoll`, `filterRolls` and `foldl`.
 
 ---
