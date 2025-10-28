@@ -21,7 +21,7 @@
     '();replace this with the actual function body
   ))
 
-;Test code, leave alone
+;set evens and odds correctly
 (define evens '())
 (define odds '())
 (display "\nQuestion 1\n")
@@ -54,7 +54,7 @@
 ;==============================
 ;QUESTION 4
 (define getScore
-  (lambda (evens g)
+  (lambda (evenOrOdd g)
     0;replace this with the actual function body
   ))
 
